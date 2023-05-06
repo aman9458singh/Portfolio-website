@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+  *{
+    margin : 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    box-sizing: border-box;
+    }
+
+
+:root{
+    --bg-color : #1f242d;
+    --second-bg-color : #323946;
+    --text-color : #fff;
+    --main-color : #0ef;
+     }
+  
+     html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+     }
+
+     body{
+        background: var(--bg-color);
+        color: var(--text-color);
+     }
+
+     section{
+     min-height: 100vh;
+     padding: 8rem 9% 2rem;
+     }
+
+     .navbar a.active {
+      color: var(--main-color);
+    }
+
+    .navbar.sticky{
+      border-bottom: 2rem solid var(--bg-color);
+    }
+
+     .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .home-content h3{
+        font-size: 3.2rem;
+        font-weight: 700;
+        font-family: 'Ubuntu', sans-serif;
+     }
+
+     .home-content h1{
+        font-size: 5.6rem;
+        font-weight: 700;
+        line-height: 1.3;
+        font-family: 'Ubuntu', sans-serif;
+     }
+     .home-content p{
+        font-size: 1.6rem;
+        font-family: 'Ubuntu', sans-serif;
+        margin-top: 1.5rem;
+     }
+
+     .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 2rem 9%;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.5);
+        align-items: center;
+        z-index: 100;
+            }
+
+
+    .logo{
+        font-size: 2.5rem;
+        color: var(--text-color);
+        font-weight: 600;
+        cursor: default;
+        font-family: 'Ubuntu', sans-serif;
+
+    }
+
+    .navbar a{
+      font-size: 1.7rem;
+      color: var(--text-color);
+      margin-left: 4rem;
+      transition: .3s;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 500;
+    }
+
+    .navbar a:hover{
+        color: var(--main-color);
+    }
+     
+    #menu-icon{
+        color: var(--text-color);
+        font-size: 3rem;
+        display: none;
+    }
+
+    .social-media a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+        color: var(--main-color);
+        border: .2rem solid var(--main-color);
+        background: transparent;
+        border-radius: 50%;
+        margin: 3rem 1.5rem 3rem 0;
+        transition: .5s;
+    }
+    
+     .social-media a:hover{
+        background-color: var(--main-color);
+        color: var(--second-bg-color);
+     }
+     span{
+        color: var(--main-color);
+     }
+
+     .btn{
+        display: inline-block;
+        letter-spacing: .2rem;
+        padding: 1rem 2.8rem;
+        background: var(--main-color);
+        color: var(--second-bg-color);
+        border-radius: 2rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        box-shadow: 0 0 1rem var(--main-color);
+        transition: .5s ease;
+     }
+     .btn:hover{
+      box-shadow: var(--main-color);
+     }
+
+     .about{
+        display: flex;
+        /* background-color: var(--second-bg-color); */
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+     }
+     .heading{
+        text-align: center;
+        font-size: 4.2rem;
+     }
+     
+
+     .about-content h2{
+        line-height: 1.2;
+        margin-bottom: 5px;
+     }
+
+     .about-content h3{
+        font-size: 2.6rem;
+     }
+
+     .about-content p{
+        font-size: 2.3rem;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        margin: 2rem 0 3rem;
+     }
+
+     .aboutBackground{
+      background: url("./images/aboutbackground.jpg");
+     }
+      
+     #dots{
+      color: var(--main-color);
+     }
+     #more{
+      display: none;
+      color: white;
+     }
+
+    .services h2{
+     margin-bottom: 5rem;
+    }
+
+    .service-container{
+        /* display: flex; */
+        gap: 2rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .service-container .services-box{
+        flex: 1 1 30rem;
+        display: inline-block;
+        background: var(--second-bg-color);
+        padding: 3rem 2rem 4rem;
+        border: .2rem solid var(--bg-color);
+        border-radius: 2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        justify-content: center;
+        transition: 0.5s ease;
+    }
+
+    .service-container .services-box:hover{
+        border-color: var(--main-color);
+        transform: scale(1.02);
+    }
+
+    .services-box i{
+        font-size: 7rem;
+        color: var(--main-color);
+    }
+
+    .services-box h3{
+        font-size: 2.6rem;
+    }
+
+    .services-box p{
+        font-size: 2.3rem;
+        overflow:hidden;
+        margin: 1rem 0 3rem;
+        /* font-family: 'Ubuntu', sans-serif; */
+        /* font-weight: 400; */
+    }
+     #service-more{
+      display: none;
+      color: white;
+    }
+
+    .portfoliobackground{
+      background:url("./images/portfoliobackground.jpg");
+      background-size: cover;
+    }
+
+    .portfolio h2{
+      margin-bottom: 4rem;
+    }
+
+    .portfolio-container{
+      display:grid;
+      grid-template-columns: repeat(3,1fr);
+      align-items: center;
+      gap: 2.5rem;
+    }
+
+     .portfolio-container .portfolio-box{
+      position: relative;
+      border-radius: 2rem;
+      box-shadow: 0 0 1rem var(--bg-color);
+      overflow: hidden;
+      display: flex;
+     }
+
+     .portfolio-box img{
+      width: 100%;
+      transition: 0.5s ease;
+     }
+
+     .portfolio-box:hover img{
+      transform: scale(1.2);
+    }
+
+
+     .portfolio-box .portfolio-layer{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0,0,0,.1),var(--main-color));
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      padding: 0,4rem;
+      transform: translateY(100%);
+      transition: 0.5s ease;
+     }
+
+     .portfolio-box:hover .portfolio-layer{
+      transform: translateY(0);
+     }
+
+    
+     .portfolio-layer{
+      justify-content: center;
+      align-items: center;
+     }
+
+     .portfolio-layer h4{
+      font-size: 2rem;
+     }
+
+     .portfolio-layer p{
+      font-size: 1.6rem;
+      margin: .3rem 0 1rem;
+     }
+
+     .portfolio-layer a{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 4rem;
+      background-color: var(--text-color);
+      border-radius: 50%;
+     }
+
+     .portfolio-layer a i{
+      font-size: 2rem;
+      color: var(--second-bg-color);
+     }
+
+     .contact h2{
+      margin-bottom: 3rem;
+     }
+
+     .contactBackground{
+      background: url("./images/contactbackground.jpg");
+      background-size: cover;
+     }
+
+     .contact form{
+      max-width: 70rem;
+      margin: 1rem auto;
+      text-align: center;
+      margin-bottom: 3rem;
+     }
+
+     .contact form .input-box{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+     }
+
+     .contact form .input-box input ,.contact form textarea{
+      width: 100%;
+      padding: 1.5rem;
+      font-size: 1.6rem;
+      color: var(--text-color);
+      background: var(--second-bg-color);
+      border-radius: .8rem;
+      margin: .7rem 0;
+
+     }
+
+     .contact form .input-box input{
+      width: 49%;
+     }
+
+     .contact form textarea{
+      resize: none;
+     }
+    
+     .contact form .btn{
+      margin-top: 2rem;
+      cursor: pointer;
+     }
+
+
+   .footer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1rem 9%;
+      background: #292828;
+   }
+
+   .footer-text p{
+      font-size: 1.6rem;
+      color: rgb(254, 255, 253);
+   }
+   .footer-icon-top a{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: .4rem;
+      background: var(--main-color);
+      border-radius: .8rem;
+      transition: .5s ease;
+   }
+
+   .footer-icon-top a:hover{
+      box-shadow: 0 0 1rem var(--main-color);
+   }
+
+   .footer-icon-top a i{
+      font-size: 2.4rem;
+      color: var(--second-bg-color);
+   }
+          
+  /* breakpoints */
+
+  @media (max-width :1200px){
+   html{
+      font-size: 55%;
+   }
+  }
+  @media (max-width :1024px){
+   .header{
+      padding: 2rem 3%;
+   }
+   .section{
+      padding: 10rem 3% 2rem;
+   }
+   .footer{
+      padding: 2rem 3%;
+   }
+  }
+
+  @media (max-width :704px){
+   #menu-icon{
+      display: block;
+   }
+   .navbar{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: var(--bg-color);
+      border-bottom: .2rem solid var(--bg-color);
+      box-shadow: 0 .5rem 1rem var(--second-bg-color);
+      display: none;
+   }
+   .navbar.active{
+      display:block;
+   }
+   .navbar a{
+      font-size: 2rem;
+      margin: 3rem 0;
+      display: block;
+   }
+   .portfolio-container{
+      grid-template-columns: repeat(2,1fr);
+   }
+  }
+  @media(max-width:418px){
+   .portfolio-container{
+      grid-template-columns: repeat(1,2fr);
+   }
+   .contact form .input-box input{
+     width: 100%;
+   }
+  }
+
+
+  .slideBG{
+   width: 100%;
+   height: 100vh;
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   backface-visibility: hidden;
+   animation: slideBG 16s linear infinite;
+   animation-timing-function:ease-in;
+   background-image: url("./images/home1.jpg");
+  }
+ 
+  @keyframes slideBG {
+   0%{
+      background-image: url("./images/home1.jpg");
+   }
+   25%{
+      background-image: url("./images/home2.jpg");
+   }
+   50%{
+      background-image: url("./images/home3.jpg");
+   }
+   75%{
+      background-image: url("./images/home4.jpg");
+   }
+   100%{
+      background-image: url("./images/home5.jpg");
+   }
+  }
+

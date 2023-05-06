@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>portfolio-AMAN SINGH</title>
+    <link rel="icon" type="logo.png" href="./images/logo.png">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+</head>
+
+<body>
+
+
+    <!-- header style -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+
+
+
+    <!-- home section -->
+    <div class="slideBG">
+    <section class="home" id="home">
+        <div class="home-content">
+            
+            <h3>Hello! It's Me</h3>
+            <h1>Aman singh</h1>
+            <h3>And , I am a <span class="multiple-text"> </span></h3>
+            <p>To pursue a challenging career and be a part of progressive organisation.</p>
+            <div class="social-media">
+                <a target="_blank" href="https://www.instagram.com/aman.9458singh/"><i
+                        class='bx bxl-instagram-alt'></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/aman-singh-6b9248124/"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a target="_blank" href="https://github.com/aman9458singh"><i class='bx bxl-github'></i></a>
+            </div>
+            <a target="_blank" href="./images/Resume.pdf" download="Resume.pdf" class="btn">Download CV</a>
+            <a target="_blank" href="./certificates.pdf" class="btn">Certificate</a>
+        </div>
+    </section>
+</div>
+
+
+
+    <!-- about sectiion -->
+    <div class="aboutBackground">
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3><span>Frontend Developer</span></h3>
+            <p>Hello!! I'm Aman Singh, a learner, and I have an interest in working out innovative ideas on how a
+                front-end web developer works. I love combining the worlds of logic and creative design to make
+                eye-catching, accessible, and user-friendly websites and applications. And to come to this place, I have
+                completed my Bachelor of Technology in Computer Science to achieve my dreams. To add on some more
+                knowledge, I picked a language and completed certification in full stack web developement. I feel
+                programming is an extremely creative profession <span id="dots">....</span>
+                <span id="more">
+
+                <br><br>
+                The move towards increasing inclusivity and diversity in the
+                industry through representation is of importance to me.
+
+                 <br><br>
+                I'm excited to make the leap and continue refining my skills with the right company.</span></p>
+                <button onclick="myFunction()" id="myBtn"class="btn">Read more</button>
+        </div>
+    </section>
+    </div>
+
+    <!-- services section -->
+    <div class="slideBG">
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="service-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web developement</h3>
+                <p>Develope complex design and responsive website <span id="service-dots">....</span> <span id="service-more"> Count on me to serve you well as your front-end web developer</span></p>
+               <button onclick="serviceFunction()" id="service-myBtn" class="btn">Read more</button> 
+            </div>
+        </div>
+       </section>
+    </div>
+
+    <!-- portfolio section -->
+    <div class="portfoliobackground">
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>NewsApp</h4>
+                    <p>A react.js single page application used to watch latest news, API is fetched from newsapp.org styled by bootstrap. </p>
+                    <a target="_blank" href="https://github.com/aman9458singh/NewsApp"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>TextUtils</h4>
+                    <p>Single page application with React.js used to create lowercase text to uppercase or viceversa,remove extra spaces,copying&clearing text styled by bootstrap. </p>
+                    <a target="_blank" href="https://github.com/aman9458singh/TextUtils"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Spotify clone</h4>
+                    <p>A javascript project lookalike spotify music made with HTML ,CSS and javascript.</p>
+                    <a target="_blank" href="https://github.com/aman9458singh/spotify-replica"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Movie Browser</h4>
+                    <p>Coming soon...</p>
+                    <a target="_blank" href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Covid Live Tracker</h4>
+                    <p>Single page application made by Reactjs where API is fetched from online source to monitor the covid patients.</p>
+                    <a target="_blank" href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio7.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Phone number validation</h4>
+                    <p>Single page website made by HTML/CSS/js where API is fetched from online source(intlTelInput) to validate national and international mobile numbers.</p>
+                    <a target="_blank" href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio8.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Tetris game</h4>
+                    <p>Dynamic game where pieces fall from top to bottom and creates fun for user ,Website made by HTML/CSS/JS.</p>
+                    <a target="_blank" href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio9.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>whackAmole!</h4>
+                    <p>whackamole game where user increse score on hitting every time whack mole in the game.</p>
+                    <a target="_blank" href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>calculator</h4>
+                    <p>Developed a calculator using HTML , CSS & javascript styled by css grid.</p>
+                    <a target="_blank" href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <!-- contact design -->
+    <div class="contactBackground">
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    </div>
+    <!-- footer  -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>copyright &copy; 2023 by Aman singh</p>
+        </div>
+
+        <div class="footer-icon-top">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <!-- custom js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
