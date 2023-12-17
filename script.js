@@ -44,7 +44,7 @@ ScrollReveal().reveal('.service-container , .portfolio-box , .contact', {origin:
 
 //  typed js
  const typed = new Typed('.multiple-text',{
-    strings : ['Frontend developer'],
+    strings : ['Frontend developer','Blogger'],
     typepeed : 700,
     backSpeed : 50,
     backeDelay : 1000,
